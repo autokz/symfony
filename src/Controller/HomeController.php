@@ -19,7 +19,7 @@ class HomeController extends AbstractController
     {
         //$user=new User('test@app.test','2');
         //
-        return $this->render('app/home.html.twig',['email'=>'g1d_test@auto.kz']);
+        return $this->render('app/home.html.twig',['email'=>'test@auto.kz']);
         #return new JsonResponse(['test'=>1]);
     }
 
