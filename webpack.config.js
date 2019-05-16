@@ -20,7 +20,7 @@ Encore
     .addEntry('app', './assets/js/app.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
-
+    .addStyleEntry('styles', './assets/scss/app.scss')
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 
@@ -46,9 +46,12 @@ Encore
         useBuiltIns: 'usage',
         corejs: 3
     })
-
+    .addLoader({
+        test: /\.(ttf|eot|svg|png|jpg|gif|ico|cur)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: { loader: 'url-loader', },
+    })
     // enables Sass/SCSS support
-    //.enableSassLoader()
+    .enableSassLoader()
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
@@ -58,11 +61,16 @@ Encore
     //.enableIntegrityHashes()
 
     // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
+    .autoProvidejQuery();
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()
     //.addEntry('admin', './assets/js/admin.js')
-;
 
-module.exports = Encore.getWebpackConfig();
+
+var config=Encore.getWebpackConfig();
+
+
+
+
+module.exports = config;

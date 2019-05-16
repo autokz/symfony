@@ -9,6 +9,21 @@
 require('../css/app.css');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
-// const $ = require('jquery');
+
+require('../js/dist/mk/core/jquery.min');
+global.Popper=require('../js/dist/mk/core/popper.min');
+
+require('../js/dist/mk/bootstrap-material-design');
+//Plugins add
+require('../js/dist/mk/plugins/bootstrap-tagsinput');
+require('../js/dist/mk/plugins/jasny-bootstrap.min');
+require('../js/dist/mk/plugins/jquery.flexisel');
+require('../js/dist/mk/plugins/bootstrap-selectpicker');
+require('../js/dist/mk/plugins/nouislider.min');
+//use npm module moment for bootstrap-datetimepicker
+require('moment');
+require('../js/dist/mk/plugins/bootstrap-datetimepicker.min');
+require('../js/dist/mk/material-kit');
+import "../scss/dist/img/bg9.jpg";
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
