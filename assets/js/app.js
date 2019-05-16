@@ -26,4 +26,4 @@ require('../js/dist/mk/plugins/bootstrap-datetimepicker.min');
 require('../js/dist/mk/material-kit');
 import "../scss/dist/img/bg9.jpg";
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+//console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
