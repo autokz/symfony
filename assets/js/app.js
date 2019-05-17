@@ -13,17 +13,18 @@ require('../css/app.css');
 require('../js/dist/mk/core/jquery.min');
 global.Popper=require('../js/dist/mk/core/popper.min');
 
-require('../js/dist/mk/bootstrap-material-design');
+require('../js/dist/mk/core/bootstrap-material-design.min');
 //Plugins add
 require('../js/dist/mk/plugins/bootstrap-tagsinput');
-require('../js/dist/mk/plugins/jasny-bootstrap.min');
 require('../js/dist/mk/plugins/jquery.flexisel');
 require('../js/dist/mk/plugins/bootstrap-selectpicker');
 require('../js/dist/mk/plugins/nouislider.min');
+require('../js/dist/mk/plugins/jasny-bootstrap.min');
+require('../js/dist/mk/plugins/jquery.sharrre');
 //use npm module moment for bootstrap-datetimepicker
 require('moment');
-require('../js/dist/mk/plugins/bootstrap-datetimepicker.min');
+require('../js/dist/mk/plugins/bootstrap-datetimepicker');
 require('../js/dist/mk/material-kit');
-import "../scss/dist/img/bg9.jpg";
+
 
 //console.log('Hello Webpack Encore! Edit me in assets/js/app.js');

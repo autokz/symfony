@@ -1,76 +1,98 @@
-/*! =========================================================
- *
- * Material Kit PRO - v2.0.0 (Bootstrap 4 Edition)
- *
- * =========================================================
- *
- * Product Page: https://www.creative-tim.com/product/material-kit-pro
- * Available with purchase of license from https://www.creative-tim.com/product/material-kit-pro
- * Copyright 2017 Creative Tim (https://www.creative-tim.com)
- * License Creative Tim (https://www.creative-tim.com/license)
- *
- * ========================================================= */
+// /*!
 
-@import "variables";
-@import "mixins";
-@import "core-bootstrap";
+ // =========================================================
+ // * Material Kit Pro - v2.1.1
+ // =========================================================
+ //
+ // * Product Page: https://www.creative-tim.com/product/material-kit-pro
+ // * Copyright 2018 Creative Tim (http://www.creative-tim.com)
+ //
+ // =========================================================
+ //
+ // * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ //
+ // */
 
-@import "reboot";
+@import 'material-kit/variables';
+@import 'material-kit/mixins';
+@import 'material-kit/core-bootstrap';
+@import 'material-kit/reboot';
+
+// Core Components
+@import 'material-kit/layout';
+@import 'material-kit/buttons';
+@import 'material-kit/misc';
+@import 'material-kit/misc-extend';
+@import 'material-kit/checkboxes';
+@import 'material-kit/custom-forms';
+@import 'material-kit/switches';
+@import 'material-kit/radios';
+@import 'material-kit/carousel';
+@import 'material-kit/forms';
+@import 'material-kit/input-group';
+@import 'material-kit/list-group';
+@import 'material-kit/nav';
+@import 'material-kit/headers';
+@import 'material-kit/footers';
+@import 'material-kit/images';
+@import 'material-kit/navbar';
+@import 'material-kit/badges';
+@import 'material-kit/alerts';
+@import 'material-kit/pagination';
+@import 'material-kit/pills';
+@import 'material-kit/info-areas';
+@import 'material-kit/type';
+@import 'material-kit/tabs';
+@import 'material-kit/tooltip';
+@import 'material-kit/popover';
+@import 'material-kit/modal';
+@import 'material-kit/modal-extend';
+@import 'material-kit/dropdown';
+@import 'material-kit/drawer';
+@import 'material-kit/progress';
+@import 'material-kit/togglebutton';
+@import 'material-kit/ripples';
+@import 'material-kit/social-buttons';
+@import 'material-kit/fileupload';
+@import 'material-kit/tables';
+@import 'material-kit/sections';
+@import 'material-kit/media';
+
+// Cards
+@import 'material-kit/cards';
+@import 'material-kit/cards/card-carousel';
+@import 'material-kit/cards/card-login';
+@import 'material-kit/cards/card-plain';
+@import 'material-kit/cards/card-background';
+@import 'material-kit/cards/card-blog';
+@import 'material-kit/cards/card-collapse';
+@import 'material-kit/cards/card-contact';
+@import 'material-kit/cards/card-form-horizontal';
+@import 'material-kit/cards/card-pricing';
+@import 'material-kit/cards/card-product';
+@import 'material-kit/cards/card-profile';
+@import 'material-kit/cards/card-rotate';
+@import 'material-kit/cards/card-testimonials';
 
 //Plugins
-@import "plugins/plugin-bootstrap-select";
-@import "plugins/plugin-datetime-picker";
-@import "plugins/plugin-nouislider";
-@import "plugins/plugin-flexisel";
-@import "plugins/plugin-tagsinput";
+@import 'material-kit/plugins/plugin-datetime-picker';
+@import 'material-kit/plugins/plugin-nouislider';
+@import 'material-kit/plugins/plugin-bootstrap-select';
+@import 'material-kit/plugins/plugin-flexisel';
+@import 'material-kit/plugins/plugin-tagsinput';
 
-@import "layout";
-@import "buttons";
-@import "misc";
-@import "checkboxes";
-@import "custom-forms";
-@import "switches";
-@import "radios";
-@import "carousel";
-@import "forms";
-@import "input-group";
-@import "list-group";
-@import "tables";
-@import "nav";
-@import "images";
-@import "fileupload";
-@import "navbar";
-@import "alerts";
-@import "progress";
-@import "badges";
-@import "pagination";
-@import "pills";
-@import "info-areas";
-@import "type";
-@import "tabs";
-@import "tooltip";
-@import "popover";
-@import "cards";
-@import "media";
-@import "modal";
-@import "dropdown";
-@import "drawer";
-@import "sections";
-@import "togglebutton";
-@import "ripples";
+// Sections and Example pages for PRO
 
-// Sections and Example pages
-@import "example-pages";
-@import "sections/headers";
-@import "sections/footers";
-@import "sections/social-subscribe-lines";
-@import "sections/features";
-@import "sections/team";
-@import "sections/pricing";
-@import "sections/blogs";
-@import "sections/projects";
-@import "sections/testimonials";
-@import "sections/contactus";
+@import 'material-kit/example-pages-extend';
+@import 'material-kit/sections/headers-extend';
+@import 'material-kit/sections/footers-extend';
+@import 'material-kit/sections/social-subscribe-lines';
+@import 'material-kit/sections/features';
+@import 'material-kit/sections/team';
+@import 'material-kit/sections/pricing';
+@import 'material-kit/sections/blogs';
+@import 'material-kit/sections/projects';
+@import 'material-kit/sections/testimonials';
+@import 'material-kit/sections/contactus';
 
-@import "extensions";
-@import "responsive";
+@import 'material-kit/responsive';
