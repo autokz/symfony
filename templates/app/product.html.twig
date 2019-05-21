@@ -1,0 +1,89 @@
+{% extends "layot/product.layout.html.twig" %}
+
+{% block title %}Подробно о товаре{% endblock %}
+
+{% block content %}
+    <div class="modal fade" id="1clickPay" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="1clickpay_ajax"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header header-filter header-small" data-parallax="false" style="background-image: url('https://hb.bizmrg.com/auto.kz-static/oil/petro-canada/bg/city-profile.jpg');">
+
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="main main-raised main-product">
+                <div class="row">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">shopping_cart</i>&nbsp;&nbsp;
+                            Купить
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#autokzPay">
+                                <i class="material-icons icon icon-info">shopping_cart</i>Купить на auto.kz</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="material-icons icon icon-danger">shopping_cart</i>Купить на kaspi.kz</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#1clickPay" id="show_clickbuy"  id="show_clickbuy"  article="{{ oil.article }}"><i class="material-icons icon icon-success">shopping_cart</i>Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="product-page2">
+                                <img src="https://hb.bizmrg.com/auto.kz-static/oil/petro-canada/goods_cropped_510x600/MOSP13C12.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <h2 class="title"> SUPREME </h2>
+                        <small>10W-40</small>
+                        <h3 class="main-price">&#8376;1990</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md col-sm">
+                        <h3 class="mb-0">Описание</h3>
+                        <p>Моторные масла SUPREME фирмы Petro-Canada – это современные моторные масла премиум-класса для смазывания работающих на бензине и этаноле (до E85) двигателей современных пассажирских автомобилей, фургонов, кроссоверов, внедорожников и грузовиков малой грузоподъёмности.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md col-sm">
+                        <h5><a href="https://hb.bizmrg.com/auto.kz-static/oil/petro-canada/oil_scecification_pdf/10W-40_SUPREME.pdf" target="_blank" class="fa">Скачать</a> технический паспорт масла</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-footer">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">shopping_cart</i>&nbsp;&nbsp;
+                                Купить
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#autokzPay">
+                                    <i class="material-icons icon icon-info">shopping_cart</i>Купить на auto.kz</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="material-icons icon icon-danger">shopping_cart</i>Купить на kaspi.kz</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#1clickPay" id="show_clickbuy"  id="show_clickbuy"  article="{{ oil.article }}" ><i class="material-icons icon icon-success">shopping_cart</i>Купить в 1 клик</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- map-Yandex- -->
+    <div class="section">
+        <div class="container" id="contactsMap">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad1aecbaa2ef5b54e715a22ed5edff45db726244486ecd12c64944f173986a8a0&amp;width=100%25&amp;height=550&amp;lang=ru_UA&amp;scroll=true"></script>
+        </div>
+    </div>
+
+{% endblock %}

@@ -25,6 +25,6 @@ require('../js/dist/mk/plugins/jquery.sharrre');
 require('moment');
 require('../js/dist/mk/plugins/bootstrap-datetimepicker');
 require('../js/dist/mk/material-kit');
-
+require('../js/dist/extends');
 
 //console.log('Hello Webpack Encore! Edit me in assets/js/app.js');

@@ -111,6 +111,12 @@
     "ocramius/proxy-manager": {
         "version": "2.1.1"
     },
+    "payboxmoney/core": {
+        "version": "1.2.9"
+    },
+    "payboxmoney/pay": {
+        "version": "1.2.5"
+    },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
     },

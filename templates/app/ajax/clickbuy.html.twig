@@ -1,0 +1,74 @@
+                    <div class="container rounded">
+
+                        <br><br>
+                        <div class="row">
+
+                        <div class="table-responsive">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-left">Описание:</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-center text-muted">{{ oil.description }} {{ oil.article }}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-left">Объем:</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-center text-muted"> {{ oil.volume }} L
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-left">Вязкость:</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-center text-muted"> {{ oil.viscosity }}
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="row font-weight-bold">
+                                    <div class="col-5 border border-light"><p>Цена</p>
+                                    </div>
+                                    <div class="col-7 border border-light"><p class="text-center font-weight-bold">Количество</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5 border border-light">
+                                        <p id='product_price' price="{{ oil.price }}">  &#8376;&nbsp;{{ oil.price }}</p>
+                                    </div>
+                                    <div class="col-7 text-center border border-light">
+                                        <div id="quantity"><p id="product_count">1</p></div>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-round btn-info" id="remove_product"> <i class="material-icons"  >remove</i> </button>
+                                            <button class="btn btn-round btn-info" id="add_product"> <i class="material-icons" >add</i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="h4"> Итого:</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="h4 text-center"><strong id="total_product_price">&#8376;&nbsp;{{ oil.price }}</strong></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <button type="button" class="btn btn-danger btn-round" id="pay_product" article="{{ oil.article }}">Оплатить<i class="material-icons">keyboard_arrow_right</i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- notice (auto.kz Pay) modal end -->
+
