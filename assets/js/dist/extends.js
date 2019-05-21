@@ -31,8 +31,9 @@
 
     })
     $('[id=autokz_buy]').on('click', function () {
-        $('#autokz_link').attr('href','http://www.auto.kz/register/?DETAIL_NUM='+$(this).attr('article'));
+        $('#autokz_link').attr('href','https://www.auto.kz/leonet/registration/retail.php?DETAIL_NUM='+$(this).attr('article'));
     });
+
     function addRemoveProduct(productCount,delta) {
 
         let intProductCount=parseInt(productCount);
